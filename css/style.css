@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Cairo:wght@200&family=Julius+Sans+One&family=Permanent+Marker&family=Poiret+One&family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../img/back.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 35px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Anek Bangla', sans-serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 31px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Anek Bangla', sans-serif;
+}
+
+#board{
+    background: linear-gradient(rgb(202, 245, 246), rgb(91, 113, 226),rgb(202, 245, 246));
+    width: 90vmin;
+    height: 92vmin;
+    border: 4px solid black;
+    /* border-top-left-radius: 5vmin; */
+    /* border-bottom-right-radius: 5vmin; */
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0),#ffffff);
+    border: 3px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 15px;
+}
+
+.snake{
+    background-color: greenyellow;
+    border: .25vmin solid white;
+    border-radius: 18px;
+}
+
+.food{
+    background: linear-gradient(rgb(221, 0, 255), rgb(255, 255, 255),rgb(255, 0, 238));
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
